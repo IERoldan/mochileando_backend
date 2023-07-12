@@ -149,7 +149,7 @@ def get_producto(id):
     """
     producto = Producto.query.get(id)  # Obtiene el producto correspondiente al ID recibido
     return producto_schema.jsonify(producto)  # Retorna el JSON del producto
-
+ 
 @app.route("/productos/<id>", methods=["DELETE"])
 def delete_producto(id):
     """
